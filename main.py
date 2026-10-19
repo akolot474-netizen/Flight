@@ -94,6 +94,4 @@ def main(page: ft.Page):
         ft.Button("💾 Сохранить запись", on_click=save_flight),
         status_text
     )
-
-if __name__ == "__main__":
-    ft.app(target=main)
+    
