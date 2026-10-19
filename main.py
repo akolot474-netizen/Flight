@@ -77,11 +77,11 @@ def main(page: ft.Page):
             conn.commit()
             conn.close()
             status_text.value = "✅ Сохранено!"
-            status_text.color = ft.Colors.GREEN
+            status_text.color = "green"
             page.update()
         except Exception as ex:
             status_text.value = f"❌ Ошибка: {ex}"
-            status_text.color = ft.Colors.RED
+            status_text.color = "red"
             page.update()
 
     page.add(
@@ -94,4 +94,3 @@ def main(page: ft.Page):
         ft.Button("💾 Сохранить запись", on_click=save_flight),
         status_text
     )
-    
